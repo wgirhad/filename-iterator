@@ -2,7 +2,7 @@
 /.editorconfig     export-ignore
 /.github           export-ignore
 /.gitignore        export-ignore
-/.pcpcs.xml        export-ignore
+/.phpcs.xml        export-ignore
 /tests             export-ignore
 /composer.lock     export-ignore
 /phpstan.neon      export-ignore
