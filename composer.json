@@ -1,0 +1,35 @@
+{
+    "name": "wgirhad/filename-iterator",
+    "description": "Glob-like recursive file iterator",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "phpstan/phpstan": "^1.10",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wgirhad\\FilenameIterator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Willian Girhad",
+            "email": "willianmonts@gmail.com"
+        }
+    ],
+    "scripts": {
+        "lint": "phpcs",
+        "lint:fix": "phpcbf",
+        "test:types": "phpstan analyse --ansi --no-progress",
+        "test:unit": "phpunit --colors=always tests",
+        "test": [
+            "@test:types",
+            "@test:unit"
+        ]
+    }
+}
